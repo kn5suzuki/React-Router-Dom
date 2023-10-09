@@ -1,0 +1,12 @@
+version: "3.9"
+services:
+  react-router:
+    build: ./react-router
+    ports:
+      - 5173:5173
+      - 8000:80
+    volumes:
+      - ./default.conf:/etc/nginx/conf.d/default.conf
+      - ./react-router:/app
+    # command: npm run dev
+    command: nginx -g 'daemon off;'
