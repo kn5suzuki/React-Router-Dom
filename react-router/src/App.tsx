@@ -8,7 +8,7 @@ function App() {
     <div>
       <h1>Hello React Router v6</h1>
 
-      <div>Linkタブ：コンポーネントの変化</div>
+      <div>Linkタグ：コンポーネントの変化</div>
       <ul>
         <li>
           <Link to="/">Home</Link>
