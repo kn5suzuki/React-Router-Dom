@@ -1,4 +1,4 @@
-import { Route, Routes } from "react-router-dom";
+import { Link, Route, Routes } from "react-router-dom";
 import Home from "./Home";
 import About from "./About";
 import Contact from "./Contact";
@@ -7,6 +7,24 @@ function App() {
   return (
     <div>
       <h1>Hello React Router v6</h1>
+
+      <div>Linkタブ：コンポーネントの変化</div>
+      <ul>
+        <li>
+          {/* <a href="/">Home</a> */}
+          <Link to="/">Home</Link>
+        </li>
+        <li>
+          {/* <a href="/about">About</a> */}
+          <Link to="/about">About</Link>
+        </li>
+        <li>
+          {/* <a href="/contact">Contact</a> */}
+          <Link to="/contact">Contact</Link>
+        </li>
+      </ul>
+
+      <div>aタグ：リロード</div>
       <ul>
         <li>
           <a href="/">Home</a>
